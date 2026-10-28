@@ -129,7 +129,6 @@ End
 
 Public Sub Report_Open()
   
-  Dim s As String
   Dim a As ReportLabel
   Dim b As ReportTextLabel
   Dim c As ReportLine
