@@ -1,7 +1,7 @@
 # Gambas Form File 3.0
 
 { Form Form
-  MoveScaled(0,0,91,96.4286)
+  MoveScaled(0,0,91,84)
   Font = Font["12"]
   Text = ("Adicionar Recibo")
   Icon = Picture["mirecibo.png"]
@@ -28,99 +28,99 @@
     Text = ("Referente à:")
   }
   { txtReferente TextBox
-    MoveScaled(1,26,88,5)
+    MoveScaled(1,26,63,5)
   }
   { lblValor Label
-    MoveScaled(1,32,61,5)
+    MoveScaled(64,21,25,5)
     Font = Font["Bold"]
     Text = ("Valor")
   }
   { txtValor ValueBox calcValor
     Name = "txtValor"
-    MoveScaled(1,37,25,5)
+    MoveScaled(65,26,24,5)
     Text = ("0")
     Type = ValueBox.Currency
   }
   { lblOutros1 Label
-    MoveScaled(1,43,61,5)
+    MoveScaled(1,31,61,5)
     Font = Font["Bold"]
     Text = ("Outros")
   }
   { txtOutros1 TextBox
-    MoveScaled(1,48,63,5)
+    MoveScaled(1,36,63,5)
   }
   { lblValor1 Label
-    MoveScaled(65,43,23,5)
+    MoveScaled(65,31,23,5)
     Font = Font["Bold"]
     Text = ("Valor")
   }
   { txtValor1 ValueBox calcValor
     Name = "txtValor1"
-    MoveScaled(65,48,24,5)
+    MoveScaled(65,36,24,5)
     Text = ("0")
     Type = ValueBox.Currency
   }
   { lblOutros2 Label
-    MoveScaled(1,54,61,5)
+    MoveScaled(1,42,61,5)
     Font = Font["Bold"]
     Text = ("Outros")
   }
   { txtOutros2 TextBox
-    MoveScaled(1,59,63,5)
+    MoveScaled(1,47,63,5)
   }
   { lblValor2 Label
-    MoveScaled(65,54,23,5)
+    MoveScaled(65,42,23,5)
     Font = Font["Bold"]
     Text = ("Valor")
   }
   { txtValor2 ValueBox calcValor
     Name = "txtValor2"
-    MoveScaled(65,59,24,5)
+    MoveScaled(65,47,24,5)
     Text = ("0")
     Type = ValueBox.Currency
   }
   { lblOutros3 Label
-    MoveScaled(1,65,61,5)
+    MoveScaled(1,53,61,5)
     Font = Font["Bold"]
     Text = ("Outros")
   }
   { txtOutros3 TextBox
-    MoveScaled(1,70,63,5)
+    MoveScaled(1,58,63,5)
   }
   { lblValor3 Label
-    MoveScaled(65,65,23,5)
+    MoveScaled(65,53,23,5)
     Font = Font["Bold"]
     Text = ("Valor")
   }
   { txtValor3 ValueBox calcValor
     Name = "txtValor3"
-    MoveScaled(65,70,24,5)
+    MoveScaled(65,58,24,5)
     Text = ("0")
     Type = ValueBox.Currency
   }
   { lblDataDeVencimento Label
-    MoveScaled(1,76,61,5)
+    MoveScaled(1,64,61,5)
     Font = Font["Bold"]
     Text = ("Data de Vencimento")
   }
   { txtDataDeVencimento ValueBox
-    MoveScaled(1,81,24,5)
+    MoveScaled(1,69,24,5)
     Type = ValueBox.Date
   }
   { lblTotal Label
-    MoveScaled(65,75,23,5)
+    MoveScaled(65,63,23,5)
     Font = Font["Bold"]
     Foreground = &H1F57FF
     Text = ("Total")
   }
   { txtTotal ValueBox
-    MoveScaled(65,80,24,5)
+    MoveScaled(65,68,24,5)
     Foreground = &H1F57FF
     Type = ValueBox.Currency
     ReadOnly = True
   }
   { btnSalvar Button
-    MoveScaled(35,89,21,6)
+    MoveScaled(35,76,21,6)
     Text = ("Salvar")
   }
 }

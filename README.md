@@ -2,9 +2,25 @@
 
 Gerencie recibos para pagamentos com valor por extenso e calculo automático. Gere relatórios para impressão ou salve-os em PDF.
 
-## Informações
+## Information
 
-- [Página MiRecibo](https://www.mugomes.com.br/2025/07/mirecibo.html)
+ - [Repository MiRecibo](https://github.com/profmugomes/mirecibo)
+
+## System Requirement
+
+### Linux
+
+- Ubuntu 26.04 or higher
+
+## 👤 Autor
+
+**Murilo Gomes**
+
+🔗 [https://www.profmugomes.com.br](https://www.profmugomes.com.br)
+
+📺 [https://youtube.com/@profmugomes](https://youtube.com/@profmugomes)
+
+---
 
 ## License
 

@@ -48,7 +48,12 @@
     { Menu8 Menu
     }
     { mnuApoie Menu
-      Text = ("Assinantes")
+      Text = ("Apoie")
+    }
+    { Menu7 Menu
+    }
+    { mnuSuporte Menu
+      Text = ("Suporte")
     }
     { Menu6 Menu
     }
