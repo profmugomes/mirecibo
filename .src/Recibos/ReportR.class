@@ -129,6 +129,7 @@ End
 
 Public Sub Report_Open()
   
+  Dim s As String
   Dim a As ReportLabel
   Dim b As ReportTextLabel
   Dim c As ReportLine
@@ -177,25 +178,26 @@ Public Sub Report_Open()
       
       'Total:
       b = New ReportTextLabel(ReportVBox1)
-      b.Text = "<font color=black><b>Valor Total: </b></font>" & formatMoeda(rs!total)
+      b.Text = "<font color=black><b>Valor Total: </b> " & formatMoeda(rs!total) & "</font>"
       b.Font.Size = 12
       b.Alignment = Align.Right
       b.Margin.Top = "3mm"
       
       'Campo Recebi de
       b = New ReportTextLabel(ReportVBox1)
-      b.Text = "<font color=black><b>Recebi de: </b></font> "
+      b.Text = "<font color=black><b>Recebi de: </b> "
       If IsInteger(rs!nome) = True Then 
         b.Text &= getIDCliente(rs!nome)
       Else 
         b.Text &= rs!nome 
       Endif 
+      b.Text &= "</font>"
       b.Font.Size = 12
       b.Margin.Top = "2mm"
       
       'Campo A importância de
       b = New ReportTextLabel(ReportVBox1)
-      b.Text = "<font color=black><b>A importância de: </b></font>" & rs!valorextenso
+      b.Text = "<font color=black><b>A importância de: </b> " & rs!valorextenso & "</font>"
       b.Alignment = Align.TopLeft
       b.Font.Size = 12
       b.Margin.Top = "2mm"
@@ -205,25 +207,25 @@ Public Sub Report_Open()
       
       'Referente à
       b = New ReportTextLabel(ReportVBox1)
-      b.Text = "<font color=black><b>Referente: </b></font> " & rs!referente
+      b.Text = "<font color=black><b>Referente: </b> " & rs!referente & "</font>"
       b.Font.Size = 12
       b.Margin.Top = "2mm"
       
       'Valor
       b = New ReportTextLabel(ReportVBox1)
-      b.Text = "<font color=black><b>Valor: </b></font> " & formatMoeda(rs!valor)
+      b.Text = "<font color=black><b>Valor: </b> " & formatMoeda(rs!valor) & "</font>"
       b.Font.Size = 12
       b.Margin.Top = "2mm"
       
       d = New ReportHBox(ReportVBox1)
       b = New ReportTextLabel(d)
-      b.Text = "<font color=black><b>Outros: </b></font>"
+      b.Text = "<font color=black><b>Outros: </b></font> "
       b.Font.Size = 12
       b.Margin.Top = "2mm"
       b.Width = "80%"
       
       b = New ReportTextLabel(d)
-      b.Text = "<font color=black><b>Valor: </b></font>"
+      b.Text = "<font color=black><b>Valor: </b></font> "
       b.Font.Size = 12
       b.Margin.Top = "2mm"
       b.Expand = True
@@ -231,13 +233,13 @@ Public Sub Report_Open()
       'Outros1
       d = New ReportHBox(ReportVBox1)
       b = New ReportTextLabel(d)
-      b.Text = rs!outros1
+      b.Text = "<font color=black>" & rs!outros1 & "</font>"
       b.Font.Size = 12
       b.Margin.Top = "2mm"
       b.Width = "80%"
       
       b = New ReportTextLabel(d)
-      b.Text = formatMoeda(rs!valor1)
+      b.Text = "<font color=black>" & formatMoeda(rs!valor1) & "</font>"
       b.Font.Size = 12
       b.Margin.Top = "2mm"
       b.Expand = True
@@ -245,13 +247,13 @@ Public Sub Report_Open()
       'Outros2
       d = New ReportHBox(ReportVBox1)
       b = New ReportTextLabel(d)
-      b.Text = rs!outros2
+      b.Text = "<font color=black>" & rs!outros2 & "</font>"
       b.Font.Size = 12
       b.Margin.Top = "2mm"
       b.Width = "80%"
       
       b = New ReportTextLabel(d)
-      b.Text = formatMoeda(rs!valor2)
+      b.Text = "<font color=black>" & formatMoeda(rs!valor2) & "</font>"
       b.Font.Size = 12
       b.Margin.Top = "2mm"
       b.Expand = True
@@ -259,20 +261,20 @@ Public Sub Report_Open()
       'Outros3
       d = New ReportHBox(ReportVBox1)
       b = New ReportTextLabel(d)
-      b.Text = rs!outros3
+      b.Text = "<font color=black>" & rs!outros3 & "</font>"
       b.Font.Size = 12
       b.Margin.Top = "2mm"
       b.Width = "80%"
       
       b = New ReportTextLabel(d)
-      b.Text = formatMoeda(rs!valor3)
+      b.Text = "<font color=black>" & formatMoeda(rs!valor3) & "</font>"
       b.Font.Size = 12
       b.Margin.Top = "2mm"
       b.Expand = True
       
       'Data de Vencimento
       b = New ReportTextLabel(ReportVBox1)
-      b.Text = "<font color=black><b>Data de Vencimento: </b></font>" & rs!datadevencimento
+      b.Text = "<font color=black><b>Data de Vencimento: </b> " & rs!datadevencimento & "</font>"
       b.Font.Size = 12
       b.Margin.Top = "2mm"
       
